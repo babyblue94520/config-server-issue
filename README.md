@@ -1,6 +1,6 @@
 # Config Server Issues
 
-[issues demo]()
+[issues demo](https://github.com/babyblue94520/config-server-issue)
 
 ## issues
 1.If git.uri is ssh uri, then all git.repos must be ssh uri?  
