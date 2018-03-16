@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active:
+    - issue1
+#    - issue2

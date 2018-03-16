@@ -1,0 +1,50 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:istar588/config-repo3.git
+          ignore-local-ssh-settings: true
+          host-key: "AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ=="
+          host-key-algorithm: ssh-rsa
+          private-key: |
+                    -----BEGIN RSA PRIVATE KEY-----
+                    MIICXgIBAAKBgQDKSXIRGz7NwFiXxut3o4DBJbzyMtyWGOD2AtDQyaSNuFuzXi8f
+                    U4hTXxIV/lCeuXajaIdz4y10VrmV4LVnLQlo2WCtoihwyAoho3+7RMwjI0+glbfZ
+                    uP8mCdm5PDMP14eHtlCPwaMofncLuwtc19cfEvutoCrxlXD39Ullyri1YQIDAQAB
+                    AoGBAKv+tMD8xHKXB/zNAqqv16riVnwsaMgqkSQ7kqbjvElPppClFTXyhWg13p/a
+                    o1vB37DjEMClOaHAl31rGXKHpYYAZLdTPihJrkSoH4sD05sRkwo5tqjreJGWYhBF
+                    WuRRC3NvboQeOHVkuWVcnJvvEnNFmX5nBnv2269J03aO44oRAkEA7iiBnDmsq6Bh
+                    pYGTdHCWTyyFJsB+RC/13gH5Q8Zkjmab+HQM7eIRPoHn/Iht4H59p7k2JFTpInqV
+                    wRr6y84zHQJBANlw/AvvXY5zgaN1oWRRk6G783J0J443o/xJI8fzaZp0ktc51Yqg
+                    YKw5b5f3di7KkYzwwU80Us3KW28uOlLdVBUCQFVbnUCiBzooLHdGXtQv+h98ZGjE
+                    Oz0zN1sPuAhLlgTXz/UXmv6ztNyDcOM4/rCkhWLU5gvVhw19hCkHA3aCfB0CQQCk
+                    RQY1Yg10+/A5dDmMV1DIA/0kP3pOp9xcUUkV2t+yD1WMAaZAx26hTfbvgMUpDmIt
+                    bwkrdCUGUVUIRo1LYugNAkEAziN+MHYv49kA3jEAHe+L0yr5Gv4Oo609UjlFBBHt
+                    ZnDecxYYc+cXl6PxwYCXNkH3iFhzyl/fE8cJfZo5KE1NvQ==
+                    -----END RSA PRIVATE KEY-----
+          repos:
+            schedule-dev:
+              uri: git@github.com:istar588/config-server-config.git
+              name: schedule-dev
+              pattern:
+              - schedule-*/*dev*
+              search-paths:
+              - schedule/dev
+              private-key: |
+                    -----BEGIN RSA PRIVATE KEY-----
+                    MIICWwIBAAKBgQC3iFN84Y2r2epeqjf9M4/nbTMdtTCRJhK8U2AC9P4tFi+Xu08T
+                    Gizrg1qmgvsaeFt0SOwieS0M47s56ZyejhNxI9an2bpwCB/H4kTJiOXDQovkeWS5
+                    GGbGzVJ9Yx0Qe6zoStCNh+J+Vlq3ibTSQmiXKlJSRR15vNcFGvjZ51KyHQIDAQAB
+                    AoGAHCq19XKAVaGKEKE7GobxTOk7cRG/tGcNdQ2urIWBBNZk03qRtjLMNhDgtrFf
+                    bD6QepY+d0P1oAbLUyYBPWw8m1uQNAxWprKjkPkhSsqHBM5fTZBb01GWX6EwXD4J
+                    rSN9njrOMVHYOexZReE5XNDoZdB7yJ0m/vNT2CfZupVVMVkCQQDz0g2j2k/3/Rqq
+                    Cv9jogp4bsVF9guP7Mmfizl8/36udwnZWSGnJHOV26vovU3X7VEwOjWtVWq6C/1H
+                    tjlygtBjAkEAwLNRQAnkRJyNb/WuWy1xSKkCf84U4nvkc0N8v9ZS549Q0L/bDYzS
+                    sPCbrTQKvyf5i+VH45atrDwaacneooe7fwJAGVIZJIkJgQGCAWK+/wPW/obSad+R
+                    d9LpZW45/Cc0ar3mAfJlskvwzQFRKwxtxxzYL5/77xJN0SBpn0bnVGMNbQJAfqth
+                    FX9rFc7zCk2tNzI/7Utr4SdOgzJ9kWcjcdco2B5VOWNkUxvmw3jmXIyBI/bbCyLE
+                    hs5di4JWuoOAXcZrcQJAESuDmUzaKCkr3K827yytW3PGXgm7j924ZmuIXx1JL2wd
+                    krv4TNTTQG3PKo+Wfr7I7PXogDPT7DvLmHQtcwFmdQ==
+                    -----END RSA PRIVATE KEY-----
+              

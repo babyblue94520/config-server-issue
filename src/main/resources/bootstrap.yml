@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: config-server-issue
+  cloud:
+    config:
+      server:
+        prefix: /Config
